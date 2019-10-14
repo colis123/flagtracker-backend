@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://colis123:colis123@ds333098.mlab.com:33098/flagtracker",
+    "database": "flagtracker",
+    "password": "colis123",
+    "name": "mongo",
+    "user": "colis123",
+    "connector": "mongodb"
+  }
+}
