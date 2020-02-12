@@ -1,5 +1,5 @@
 {
-  "name": "repairOrder",
+  "name": "pay-periods",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,24 +10,10 @@
       "type": "date",
       "required": true
     },
-    "vehicleMake": {
-      "type": "string",
-      "required": true
-    },
-    "orderNumber": {
-      "type": "number",
-      "required": true
-    },
-    "vehicleModel": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "string",
-      "required": true
-    },
-    "hours": {
-      "type": "number",
+    "orders": {
+      "type": [
+        "object"
+      ],
       "required": true
     }
   },

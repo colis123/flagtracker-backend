@@ -19,7 +19,7 @@
       "required": true
     },
     "newUser": {
-      "type": "string"
+      "type": "boolean"
     }
   },
   "validations": [],
@@ -28,11 +28,30 @@
       "type": "hasMany",
       "model": "repairOrder",
       "foreignKey": "userId"
+    },
+    "prev-ros": {
+      "type": "hasMany",
+      "model": "prev-ro",
+      "foreignKey": "userId"
+    },
+    "pay-periods": {
+      "type": "hasMany",
+      "model": "pay-periods",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [
     {
-      "accessType": "WRITE",
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"

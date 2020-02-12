@@ -42,5 +42,13 @@
   "repairOrder": {
     "dataSource": "mongo",
     "public": true
+  },
+  "prev-ro": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "pay-periods": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
