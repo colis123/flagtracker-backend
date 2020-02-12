@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "NODE_ENV=development node .",
+    "start": "node .",
     "dev": "NODE_ENV=development node .",
     "posttest": "npm run lint"
   },
